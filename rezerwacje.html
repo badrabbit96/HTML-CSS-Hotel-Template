@@ -1,0 +1,155 @@
+<!doctype html>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans+Narrow" />
+
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Hotel Transylwania</title>
+  <meta name="description" content="Hotel Transylwania">
+  <meta name="author" content="Tomasz Niemczyk">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<div id="header">
+<h1></h1>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="images/test2.jpg" style="width:100%">
+  <div class="text">
+<menu-button><a href="index.html">Strona główna</a></menu-button> <menu-button><a href="rezerwacje.html">Rezerwacje</a></menu-button><menu-button><a href="konferencje.html">Konferencje</a></menu-button><menu-button><a href="resteuracje.html">Resteuracja</a></menu-button><menu-button><a href="pokoje.html">Pokoje</a></menu-button><menu-button><a href="kontakt.html">Kontakt</a></menu-button>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <img src="images/test1.jpg" style="width:100%">
+   <div class="text">
+<menu-button><a href="index.html">Strona główna</a></menu-button> <menu-button><a href="rezerwacje.html">Rezerwacje</a></menu-button><menu-button><a href="konferencje.html">Konferencje</a></menu-button><menu-button><a href="resteuracje.html">Resteuracja</a></menu-button><menu-button><a href="pokoje.html">Pokoje</a></menu-button><menu-button><a href="kontakt.html">Kontakt</a></menu-button>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <img src="images/test3.jpg" style="width:100%">
+  <div class="text">
+<menu-button><a href="index.html">Strona główna</a></menu-button> <menu-button><a href="rezerwacje.html">Rezerwacje</a></menu-button><menu-button><a href="konferencje.html">Konferencje</a></menu-button><menu-button><a href="resteuracje.html">Resteuracja</a></menu-button><menu-button><a href="pokoje.html">Pokoje</a></menu-button><menu-button><a href="kontakt.html">Kontakt</a></menu-button>
+  </div>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+   
+    slides[slideIndex-1].style.display = "block";  
+   
+    setTimeout(showSlides, 5000); 
+}
+</script>
+
+
+
+</div>
+
+
+
+<div id=mid>
+<h3>Hotel Transylwania to miejsce gdzie historia przeplata się z <b>nowoczesnością
+i ekskluzywnym </b>wystrojem.</h3>
+
+<div id=mid_left>
+<center>
+Rezerwacja pokoju w Hotelu:
+<div id="mid_rigt_rezerwacje2">
+ 
+REZERWACJA ONLINE<br><br>
+
+Imię i Nazwisko: <br>
+<input type="text" name="fname"><br>
+Data przyjazdu: <br>
+
+  <select>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+  </select>
+   <select>
+    <option>styczeń</option>
+    <option>luty</option>
+    <option>marzec</option>
+    <option>kwiecień</option>
+  </select>
+   <select>
+    <option>2017</option>
+    <option>2018</option>
+  </select>
+<br>
+Liczba nocy <br>
+<select>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    </select>
+
+<div id="button3">REZERWUJ</div>
+ </div>
+
+
+</center>
+
+
+</div>
+
+<div id="mid_right">
+</div>
+
+</div>
+
+<div id=bottom>
+<h2>Copyright &copy Tomasz Niemczyk Aplikacje Internetowe 2017</h2>
+<br>
+<img width="100px" height="100px" src="awards/1.png">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<img width="100px" height="100px" src="awards/2.png">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<img width="100px" height="100px" src="awards/3.png">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<img width="100px" height="100px" src="awards/9.png">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<img width="100px" height="100px" src="awards/8.png">
+</div>
+
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+
+<button onclick="topFunction()" id="myBtn" title="top">Góra</button>
+
+</html>
